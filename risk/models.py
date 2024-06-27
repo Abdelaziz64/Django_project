@@ -2,16 +2,16 @@ from django.db import models
 from django.urls import reverse
 
 class ThreatType(models.Model):
-    name = models.TextField()
+    type = models.TextField()
 
     def __str__(self):
-        return self.name
+        return self.type
 
 class ThreatOrigin(models.Model):
-    name = models.TextField()
+    origin = models.TextField()
 
     def __str__(self):
-        return self.name
+        return self.origin
 
 
 class Threat(models.Model):
@@ -20,7 +20,7 @@ class Threat(models.Model):
     source = models.TextField(null=True)
 
     origin = models.ForeignKey(ThreatOrigin, on_delete=models.CASCADE,null=True)
-    threat_type = models.ForeignKey(ThreatType, on_delete=models.CASCADE,null=True)
+    type = models.ForeignKey(ThreatType, on_delete=models.CASCADE,null=True)
 
 
 

@@ -4,7 +4,7 @@ from risk.models import Threat
 from .serializers import ThreatSerializer
 
 @api_view(['GET'])
-def getThreats(request):
+def getThreatss(request):
     threat = Threat.objects.all()
     serializer = ThreatSerializer(threat, many=True)
     return Response(serializer.data)
