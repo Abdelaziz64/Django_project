@@ -1,0 +1,65 @@
+/* static/css/base.css */
+
+/* Remove underline from links and change link colors */
+a {
+    text-decoration: none;
+    color: #007BFF; /* Bootstrap primary blue color */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px; /* Optional: Add some margin below the header */
+}
+
+/* Table styling */
+table {
+    width: 80%; /* Set the width to 80% of the parent container */
+    max-width: 800px; /* Set a maximum width for the table */
+    margin: 20px auto; /* Center the table */
+    border-collapse: separate; /* Use separate borders to allow for rounded corners */
+    border-spacing: 0; /* Remove spacing between table cells */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+th, td {
+    border: 1px solid #e0e0e0; /* Light gray borders */
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f8f9fa; /* Light gray background for table headers */
+    font-weight: 600;
+    text-align: center; /* Center the header text */
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa; /* Light gray background for even rows */
+}
+
+tr:hover {
+    background-color: #e9ecef; /* Slightly darker gray on hover */
+}
+
+/* Round the edges of the table */
+table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table th:first-child,
+table td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+table th:last-child,
+table td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
