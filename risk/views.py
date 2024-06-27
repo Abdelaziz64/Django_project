@@ -38,8 +38,14 @@ def addThreatOrigin(request):
 
 @api_view(['GET'])
 def getThreatType(request):
-    origin = ThreatType.objects.all()
-    serializer = ThreatTypeSerializer(origin, many=True)
+    type = ThreatType.objects.all()
+    serializer = ThreatTypeSerializer(type, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def getThreatTypeDetail(request, pk):
+    type = ThreatType.objects.get(id=pk)
+    serializer = ThreatTypeSerializer(type, many=False)
     return Response(serializer.data)
 
 @api_view(['POST'])
@@ -48,4 +54,20 @@ def addThreatType(request):
     if serializer.is_valid():
         serializer.save()
     return Response(serializer.data)
+
+@api_view(['POST'])
+def updateThreatType(request, pk):
+    type = ThreatType.objects.get(id=pk)
+    serializer = ThreatTypeSerializer(instance=type, data=request.data)
+    if serializer.is_valid():
+        serializer.save()
+    return Response(serializer.data)
+
+
+@api_view(['DELETE'])
+def deleteThreatType(request, pk):
+    type = ThreatType.objects.get(id=pk)
+    type.delete()
+    return Response('Type deleted.')
+
  
