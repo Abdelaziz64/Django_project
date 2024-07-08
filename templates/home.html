@@ -7,6 +7,9 @@
         <tr>
             <th>Threat Name</th>
             <th>Description</th>
+            <th>Source</th>
+            <th>Origin</th>
+            <th>Type</th>
         </tr>
     </thead>
     <tbody>
@@ -14,6 +17,9 @@
         <tr>
             <td><a href="">{{ threat.name }}</a></td>
             <td>{{ threat.description }}</td>
+            <td><a href="">{{ threat.source }}</a></td>
+            <td>{{ threat.origin }}</td>
+            <td>{{ threat.type }}</td>
         </tr>
         {% endfor %}
     </tbody>
