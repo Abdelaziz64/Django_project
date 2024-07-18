@@ -32,6 +32,17 @@ class ThreatCategoryViewSet(viewsets.ModelViewSet):
         else:
             return Response({"detail": "Family ID parameter is required"}, status=status.HTTP_400_BAD_REQUEST)
 
+    @action(detail=False, methods=['get'])
+    def get_by_category_name(self, request):
+        category_name = request.query_params.get('category_name')
+        if category_name is not None:
+            categories = Category.objects.filter(category_name__icontains=category_name)
+            serializer = self.get_serializer(categories, many=True)
+            return Response(serializer.data)
+        else:
+            return Response({"detail": "Category name parameter is required"}, status=status.HTTP_400_BAD_REQUEST)
+        
+
 class ThreatEventViewSet(viewsets.ModelViewSet):
     queryset = ThreatEvent.objects.all()
     serializer_class = ThreatEventSerializer
@@ -40,22 +51,25 @@ class ThreatEventViewSet(viewsets.ModelViewSet):
     def get_by_category(self, request):
         category_id = request.query_params.get('category_id')
         if category_id is not None:
-            events = ThreatEvent.objects.filter(event_category_name__category_name_id=category_id)
+            events = ThreatEvent.objects.filter(event_category_name__category_name__id=category_id)
             serializer = self.get_serializer(events, many=True)
             return Response(serializer.data)
         else:
             return Response({"detail": "Category ID parameter is required"}, status=status.HTTP_400_BAD_REQUEST)
 
-    @action(detail=False, methods=['get'])
-    def get_by_family(self, request):
-        family_id = request.query_params.get('family_id')
-        if family_id is not None:
-            events = ThreatEvent.objects.filter(event_category_name__category_name__family_id=family_id)
-            serializer = self.get_serializer(events, many=True)
-            return Response(serializer.data)
-        else:
-            return Response({"detail": "Family ID parameter is required"}, status=status.HTTP_400_BAD_REQUEST)
+    
+
         
 class ThreatEventCategoryViewSet(viewsets.ModelViewSet):
     queryset = ThreatEventCategory.objects.all()
     serializer_class = ThreatEventCategorySerializer
+
+    @action(detail=False, methods=['get'])
+    def get_by_family(self, request):
+        family_id = request.query_params.get('family_id')
+        if family_id is not None:
+            categories = Category.objects.filter(family_id=family_id)
+            serializer = self.get_serializer(categories, many=True)
+            return Response(serializer.data)
+        else:
+            return Response({"detail": "Family ID parameter is required"}, status=status.HTTP_400_BAD_REQUEST)

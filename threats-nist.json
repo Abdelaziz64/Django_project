@@ -511,8 +511,5 @@
                 "event_name": "Windstorm/tornado at backup facility",
                 "description": "Windstorm/tornado of organization-defined strength at backup facility makes facility inoperable or destroys backups of software, configurations, data, and/or logs."
             }
-        
-        
-    
     
 ]
