@@ -5,21 +5,21 @@
 <table>
     <thead>
         <tr>
-            <th>Threat Name</th>
+            <th>Category</th>
+            <th>No</th>
             <th>Description</th>
-            <th>Source</th>
             <th>Origin</th>
-            <th>Type</th>
+            
         </tr>
     </thead>
     <tbody>
         {% for threat in threat_list %}
         <tr>
-            <td><a href="">{{ threat.name }}</a></td>
+            <td>{{ threat.category }}</td>
+            <td><a href="">{{ threat.no }}</a></td>
             <td>{{ threat.description }}</td>
-            <td><a href="">{{ threat.source }}</a></td>
             <td>{{ threat.origin }}</td>
-            <td>{{ threat.type }}</td>
+            
         </tr>
         {% endfor %}
     </tbody>

@@ -1,17 +1,27 @@
 from rest_framework import serializers
-from .models import Threat, ThreatOrigin, ThreatType
+from .models import Threat,Family, Category,ThreatEvent,ThreatEventCategory
 
 class ThreatSerializer(serializers.ModelSerializer):
     class Meta:
         model = Threat
-        fields = ['name', 'description', 'source', 'origin', 'type']
+        fields = ['category_name','description', 'name']
 
-class ThreatOriginSerializer(serializers.ModelSerializer):
+class FamilySerializer(serializers.ModelSerializer):
     class Meta:
-        model = ThreatOrigin
-        fields = ['origin']
+        model = Family
+        fields = ['family']
 
-class ThreatTypeSerializer(serializers.ModelSerializer):
+class ThreatCategorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = ThreatType
-        fields = ['type']
+        model = Category
+        fields = ['category_name','description','family','id']
+
+class ThreatEventSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ThreatEvent
+        fields = ['event_category_name','event_name','description',]
+
+class ThreatEventCategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ThreatEventCategory
+        fields = ['category_name','event_category_name']

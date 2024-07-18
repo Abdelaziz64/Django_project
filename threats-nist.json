@@ -1,0 +1,518 @@
+[
+    {
+        "event_category_name": 1,
+        "event_name": "Perform perimeter network reconnaissance/scanning",
+        "description": "Adversary uses commercial or free software to scan organizational perimeters to obtain a better understanding of the information technology infrastructure and improve the ability to launch successful attacks."
+    },
+    {
+        "event_category_name": 1,
+        "event_name": "Perform network sniffing of exposed networks",
+        "description": "Adversary with access to exposed wired or wireless data channels used to transmit information, uses network sniffing to identify components, resources, and protections."
+    },
+    {
+        "event_category_name": 1,
+        "event_name": "Gather information using open source discovery of organizational information",
+        "description": "Adversary mines publically accessible information to gather information about organizational information systems, business processes, users or personnel, or external relationships that the adversary can subsequently employ in support of an attack."
+    },
+    {
+        "event_category_name": 1,
+        "event_name": "Perform reconnaissance and surveillance of targeted organizations",
+        "description": "Adversary uses various means (e.g., scanning, physical observation) over time to examine and assess organizations and ascertain points of vulnerability."
+    },
+    {
+        "event_category_name": 1,
+        "event_name": "Perform malware-directed internal reconnaissance",
+        "description": "Adversary uses malware installed inside the organizational perimeter to identify targets of opportunity. Because the scanning, probing, or observation does not cross the perimeter, it is not detected by externally placed intrusion detection systems."
+    },
+    
+        {
+            "event_category_name": 2,
+            "event_name": "Craft phishing attacks",
+            "description": "Adversary counterfeits communications from a legitimate/trustworthy source to acquire sensitive information such as usernames, passwords, or SSNs. Typical attacks occur via email, instant messaging, or comparable means; commonly directing users to websites that appear to be legitimate sites, while actually stealing the entered information."
+        },
+        {
+            "event_category_name": 2,
+            "event_name": "Craft spear phishing attacks",
+            "description": "Adversary employs phishing attacks targeted at high value targets (e.g., senior leaders/executives)."
+        },
+        {
+            "event_category_name": 2,
+            "event_name": "Craft attacks specifically based on deployed information technology environment",
+            "description": "Adversary develops attacks (e.g., crafts targeted malware) that take advantage of adversary knowledge of the organizational information technology environment."
+        },
+        {
+            "event_category_name": 2,
+            "event_name": "Create counterfeit/spoof website",
+            "description": "Adversary creates duplicates of legitimate websites; when users visit a counterfeit site, the site can gather information or download malware."
+        },
+        {
+            "event_category_name": 2,
+            "event_name": "Craft counterfeit certificates",
+            "description": "Adversary counterfeits or compromises a certificate authority, so that malware or connections will appear legitimate."
+        },
+        {
+            "event_category_name": 2,
+            "event_name": "Create and operate false front organizations to inject malicious components into the supply chain",
+            "description": "Adversary creates false front organizations with the appearance of legitimate suppliers in the critical life-cycle path that then inject corrupted/malicious information system components into the organizational supply chain."
+        },
+        
+            {
+                "event_category_name": 3,
+                "event_name": "Deliver known malware to internal organizational information systems (e.g., virus via email)",
+                "description": "Adversary uses common delivery mechanisms (e.g., email) to install/insert known malware (e.g., malware whose existence is known) into organizational information systems."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Deliver modified malware to internal organizational information systems",
+                "description": "Adversary uses more sophisticated delivery mechanisms than email (e.g., web traffic, instant messaging, FTP) to deliver malware and possibly modifications of known malware to gain access to internal organizational information systems."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Deliver targeted malware for control of internal systems and exfiltration of data",
+                "description": "Adversary installs malware that is specifically designed to take control of internal organizational information systems, identify sensitive information, exfiltrate the information back to adversary, and conceal these actions."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Deliver malware by providing removable media",
+                "description": "Adversary places removable media (e.g., flash drives) containing malware in locations external to organizational physical perimeters but where employees are likely to find the media (e.g., facilities parking lots, exhibits at conferences attended by employees) and use it on organizational information systems."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert untargeted malware into downloadable software and/or into commercial information technology products",
+                "description": "Adversary corrupts or inserts malware into common freeware, shareware or commercial information technology products. Adversary is not targeting specific organizations, simply looking for entry points into internal organizational information systems. Note that this is particularly a concern for mobile applications."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert targeted malware into organizational information systems and information system components",
+                "description": "Adversary inserts malware into organizational information systems and information system components (e.g., commercial information technology products), specifically targeted to the hardware, software, and firmware used by organizations (based on knowledge gained via reconnaissance)."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert specialized malware into organizational information systems based on system configurations",
+                "description": "Adversary inserts specialized, non-detectable, malware into organizational information systems based on system configurations, specifically targeting critical information system components based on reconnaissance and placement within organizational information systems."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert counterfeit or tampered hardware into the supply chain",
+                "description": "Adversary intercepts hardware from legitimate suppliers. Adversary modifies the hardware or replaces it with faulty or otherwise modified hardware."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert tampered critical components into organizational systems",
+                "description": "Adversary replaces, though supply chain, subverted insider, or some combination thereof, critical information system components with modified or corrupted components."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Install general-purpose sniffers on organization controlled information systems or networks",
+                "description": "Adversary installs sniffing software onto internal organizational information systems or networks."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Install persistent and targeted sniffers on organizational information systems and networks",
+                "description": "Adversary places within internal organizational information systems or networks software designed to (over a continuous period of time) collect (sniff) network traffic."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert malicious scanning devices (e.g., wireless sniffers) inside facilities",
+                "description": "Adversary uses postal service or other commercial delivery services to deliver to organizational mailrooms a device that is able to scan wireless communications accessible from within the mailrooms and then wirelessly transmit information back to adversary."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert subverted individuals into organizations",
+                "description": "Adversary places individuals within organizations who are willing and able to carry out actions to cause harm to organizational missions/business functions."
+            },
+            {
+                "event_category_name": 3,
+                "event_name": "Insert subverted individuals into privileged positions in organizations",
+                "description": "Adversary places individuals in privileged positions within organizations who are willing and able to carry out actions to cause harm to organizational missions/business functions. Adversary may target privileged functions to gain access to sensitive information (e.g., user accounts, system files, etc.) and may leverage access to one privileged capability to get to another capability."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit physical access of authorized staff to gain access to organizational facilities",
+                "description": "Adversary follows (“tailgates”) authorized individuals into secure/controlled locations with the goal of gaining access to facilities, circumventing physical security checks."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit poorly configured or unauthorized information systems exposed to the Internet",
+                "description": "Adversary gains access through the Internet to information systems that are not authorized for Internet connectivity or that do not meet organizational configuration requirements."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit split tunneling",
+                "description": "Adversary takes advantage of external organizational or personal information systems (e.g., laptop computers at remote locations) that are simultaneously connected securely to organizational information systems or networks and to nonsecure remote connections."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit multi-tenancy in a cloud environment",
+                "description": "Adversary, with processes running in an organizationally-used cloud environment, takes advantage of multi-tenancy to observe behavior of organizational processes, acquire organizational information, or interfere with the timely or correct functioning of organizational processes."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit known vulnerabilities in mobile systems (e.g., laptops, PDAs, smart phones)",
+                "description": "Adversary takes advantage of fact that transportable information systems are outside physical protection of organizations and logical protection of corporate firewalls, and compromises the systems based on known vulnerabilities to gather information from those systems."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit recently discovered vulnerabilities",
+                "description": "Adversary exploits recently discovered vulnerabilities in organizational information systems in an attempt to compromise the systems before mitigation measures are available or in place."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit vulnerabilities on internal organizational information systems",
+                "description": "Adversary searches for known vulnerabilities in organizational internal information systems and exploits those vulnerabilities."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit vulnerabilities using zero-day attacks",
+                "description": "Adversary employs attacks that exploit as yet unpublicized vulnerabilities. Zero-day attacks are based on adversary insight into the information systems and applications used by organizations as well as adversary reconnaissance of organizations."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit vulnerabilities in information systems timed with organizational mission/business operations tempo",
+                "description": "Adversary launches attacks on organizations in a time and manner consistent with organizational needs to conduct mission/business operations."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Exploit insecure or incomplete data deletion in multi-tenant environment",
+                "description": "Adversary obtains unauthorized information due to insecure or incomplete data deletion in a multi-tenant environment (e.g., in a cloud computing environment)."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Violate isolation in multi-tenant environment",
+                "description": "Adversary circumvents or defeats isolation mechanisms in a multi-tenant environment (e.g., in a cloud computing environment) to observe, corrupt, or deny service to hosted services and information/data."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Compromise critical information systems via physical access",
+                "description": "Adversary obtains physical access to organizational information systems and makes modifications."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Compromise information systems or devices used externally and reintroduced into the enterprise",
+                "description": "Adversary installs malware on information systems or devices while the systems/devices are external to organizations for purposes of subsequently infecting organizations when reconnected."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Compromise software of organizational critical information systems",
+                "description": "Adversary inserts malware or otherwise corrupts critical internal organizational information systems."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Compromise organizational information systems to facilitate exfiltration of data/information",
+                "description": "Adversary implants malware into internal organizational information systems, where the malware over time can identify and then exfiltrate valuable information."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Compromise mission-critical information",
+                "description": "Adversary compromises the integrity of mission-critical information, thus preventing or impeding ability of organizations to which information is supplied, from carrying out operations."
+            },
+            {
+                "event_category_name": 4,
+                "event_name": "Compromise design, manufacture, and/or distribution of information system components (including hardware, software, and firmware)",
+                "description": "Adversary compromises the design, manufacture, and/or distribution of critical information system components at selected suppliers."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct communications interception attacks",
+                "description": "Adversary takes advantage of communications that are either unencrypted or use weak encryption (e.g., encryption containing publicly known flaws), targets those communications, and gains access to transmitted information and channels."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct wireless jamming attacks",
+                "description": "Adversary takes measures to interfere with wireless communications so as to impede or prevent communications from reaching intended recipients."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct attacks using unauthorized ports, protocols and services",
+                "description": "Adversary conducts attacks using ports, protocols, and services for ingress and egress that are not authorized for use by organizations."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct attacks leveraging traffic/data movement allowed across perimeter",
+                "description": "Adversary makes use of permitted information flows (e.g., email communication, removable storage) to compromise internal information systems, which allows adversary to obtain and exfiltrate sensitive information through perimeters."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct simple Denial of Service (DoS) attack",
+                "description": "Adversary attempts to make an Internet-accessible resource unavailable to intended users, or prevent the resource from functioning efficiently or at all, temporarily or indefinitely."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct Distributed Denial of Service (DDoS) attacks",
+                "description": "Adversary uses multiple compromised information systems to attack a single target, thereby causing denial of service for users of the targeted information systems."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct targeted Denial of Service (DoS) attacks",
+                "description": "Adversary targets DoS attacks to critical information systems, components, or supporting infrastructures, based on adversary knowledge of dependencies."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct physical attacks on organizational facilities",
+                "description": "Adversary conducts a physical attack on organizational facilities (e.g., sets a fire)."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct physical attacks on infrastructures supporting organizational facilities",
+                "description": "Adversary conducts a physical attack on one or more infrastructures supporting organizational facilities (e.g., breaks a water main, cuts a power line)."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct cyber-physical attacks on organizational facilities",
+                "description": "Adversary conducts a cyber-physical attack on organizational facilities (e.g., remotely changes HVAC settings)."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct data scavenging attacks in a cloud environment",
+                "description": "Adversary obtains data used and then deleted by organizational processes running in a cloud environment."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct brute force login attempts/password guessing attacks",
+                "description": "Adversary attempts to gain access to organizational information systems by random or systematic guessing of passwords, possibly supported by password cracking utilities."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct nontargeted zero-day attacks",
+                "description": "Adversary employs attacks that exploit as yet unpublicized vulnerabilities. Attacks are not based on any adversary insights into specific vulnerabilities of organizations."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct externally-based session hijacking",
+                "description": "Adversary takes control of (hijacks) already established, legitimate information system sessions between organizations and external entities (e.g., users connecting from off-site locations)."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct internally-based session hijacking",
+                "description": "Adversary places an entity within organizations in order to gain access to organizational information systems or networks for the express purpose of taking control (hijacking) an already established, legitimate session either between organizations and external entities (e.g., users connecting from remote locations) or between two locations within internal networks."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct externally-based network traffic modification (man in the middle) attacks",
+                "description": "Adversary, operating outside organizational systems, intercepts/eavesdrops on sessions between organizational and external systems. Adversary then relays messages between organizational and external systems, making them believe that they are talking directly to each other over a private connection, when in fact the entire communication is controlled by the adversary. Such attacks are of particular concern for organizational use of community, hybrid, and public clouds."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct internally-based network traffic modification (man in the middle) attacks",
+                "description": "Adversary operating within the organizational infrastructure intercepts and corrupts data sessions."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct outsider-based social engineering to obtain information",
+                "description": "Externally placed adversary takes actions (e.g., using email, phone) with the intent of persuading or otherwise tricking individuals within organizations into revealing critical/sensitive information (e.g., personally identifiable information)."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct insider-based social engineering to obtain information",
+                "description": "Internally placed adversary takes actions (e.g., using email, phone) so that individuals within organizations reveal critical/sensitive information (e.g., mission information)."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct attacks targeting and compromising personal devices of critical employees",
+                "description": "Adversary targets key organizational employees by placing malware on their personally owned information systems and devices (e.g., laptop/notebook computers, personal digital assistants, smart phones). The intent is to take advantage of any instances where employees use personal information systems or devices to handle critical/sensitive information."
+            },
+            {
+                "event_category_name": 5,
+                "event_name": "Conduct supply chain attacks targeting and exploiting critical hardware, software, or firmware",
+                "description": "Adversary targets and compromises the operation of software (e.g., through malware injections), firmware, and hardware that performs critical functions for organizations. This is largely accomplished as supply chain attacks on both commercial off-the-shelf and custom information systems and components."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Obtain sensitive information through network sniffing of external networks",
+                "description": "Adversary with access to exposed wired or wireless data channels that organizations (or organizational personnel) use to transmit information (e.g., kiosks, public wireless networks) intercepts communications."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Obtain sensitive information via exfiltration",
+                "description": "Adversary directs malware on organizational systems to locate and surreptitiously transmit sensitive information."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Cause degradation or denial of attacker-selected services or capabilities",
+                "description": "Adversary directs malware on organizational systems to impair the correct and timely support of organizational mission/business functions."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Cause deterioration/destruction of critical information system components and functions",
+                "description": "Adversary destroys or causes deterioration of critical information system components to impede or eliminate organizational ability to carry out missions or business functions. Detection of this action is not a concern."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Cause integrity loss by creating, deleting, and/or modifying data on publicly accessible information systems (e.g., web defacement)",
+                "description": "Adversary vandalizes, or otherwise makes unauthorized changes to, organizational websites or data on websites."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Cause integrity loss by polluting or corrupting critical data",
+                "description": "Adversary implants corrupted and incorrect data in critical data, resulting in suboptimal actions or loss of confidence in organizational data/services."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Cause integrity loss by injecting false but believable data into organizational information systems",
+                "description": "Adversary injects false but believable data into organizational information systems, resulting in suboptimal actions or loss of confidence in organizational data/services."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Cause disclosure of critical and/or sensitive information by authorized users",
+                "description": "Adversary induces (e.g., via social engineering) authorized users to inadvertently expose, disclose, or mishandle critical/sensitive information."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Cause unauthorized disclosure and/or unavailability by spilling sensitive information",
+                "description": "Adversary contaminates organizational information systems (including devices and networks) by causing them to handle information of a classification/sensitivity for which they have not been authorized. The information is exposed to individuals who are not authorized access to such information, and the information system, device, or network is unavailable while the spill is investigated and mitigated."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Obtain information by externally located interception of wireless network traffic",
+                "description": "Adversary intercepts organizational communications over wireless networks. Examples include targeting public wireless access or hotel networking connections, and drive-by subversion of home or organizational wireless routers."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Obtain unauthorized access",
+                "description": "Adversary with authorized access to organizational information systems, gains access to resources that exceeds authorization."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Obtain sensitive data/information from publicly accessible information systems",
+                "description": "Adversary scans or mines information on publicly accessible servers and web pages of organizations with the intent of finding sensitive information."
+            },
+            {
+                "event_category_name": 6,
+                "event_name": "Obtain information by opportunistically stealing or scavenging information systems/components",
+                "description": "Adversary steals information systems or components (e.g., laptop computers or data storage media) that are left unattended outside of the physical perimeters of organizations, or scavenges discarded components."
+            },
+            {
+                "event_category_name": 7,
+                "event_name": "Obfuscate adversary actions",
+                "description": "Adversary takes actions to inhibit the effectiveness of the intrusion detection systems or auditing capabilities within organizations."
+            },
+            {
+                "event_category_name": 7,
+                "event_name": "Adapt cyber attacks based on detailed surveillance",
+                "description": "Adversary adapts behavior in response to surveillance and organizational security measures."
+            },
+            {
+                "event_category_name": 8,
+                "event_name": "Coordinate a campaign of multi-staged attacks (e.g., hopping)",
+                "description": "Adversary moves the source of malicious commands or actions from one compromised information system to another, making analysis difficult."
+            },
+            {
+                "event_category_name": 8,
+                "event_name": "Coordinate a campaign that combines internal and external attacks across multiple information systems and information technologies",
+                "description": "Adversary combines attacks that require both physical presence within organizational facilities and cyber methods to achieve success. Physical attack steps may be as simple as convincing maintenance personnel to leave doors or cabinets open."
+            },
+            {
+                "event_category_name": 8,
+                "event_name": "Coordinate campaigns across multiple organizations to acquire specific information or achieve desired outcome",
+                "description": "Adversary does not limit planning to the targeting of one organization. Adversary observes multiple organizations to acquire necessary information on targets of interest."
+            },
+            {
+                "event_category_name": 8,
+                "event_name": "Coordinate a campaign that spreads attacks across organizational systems from existing presence",
+                "description": "Adversary uses existing presence within organizational systems to extend the adversary’s span of control to other organizational systems including organizational infrastructure. Adversary thus is in position to further undermine organizational ability to carry out missions/business functions."
+            },
+            {
+                "event_category_name": 8,
+                "event_name": "Coordinate a campaign of continuous, adaptive, and changing cyber attacks based on detailed surveillance",
+                "description": "Adversary attacks continually change in response to surveillance and organizational security measures."
+            },
+            {
+                "event_category_name": 8,
+                "event_name": "Coordinate cyber attacks using external (outsider), internal (insider), and supply chain (supplier) attack vectors",
+                "description": "Adversary employs continuous, coordinated attacks, potentially using all three attack vectors for the purpose of impeding organizational operations."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Spill sensitive information",
+                "description": "Authorized user erroneously contaminates a device, information system, or network by placing on it or sending to it information of a classification/sensitivity which it has not been authorized to handle. The information is exposed to access by unauthorized individuals, and as a result, the device, system, or network is unavailable while the spill is investigated and mitigated."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Mishandling of critical and/or sensitive information by authorized users",
+                "description": "Authorized privileged user inadvertently exposes critical/sensitive information."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Incorrect privilege settings",
+                "description": "Authorized privileged user or administrator erroneously assigns a user exceptional privileges or sets privilege requirements on a resource too low."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Communications contention",
+                "description": "Degraded communications performance due to contention."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Unreadable display",
+                "description": "Display unreadable due to aging equipment."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Earthquake at primary facility",
+                "description": "Earthquake of organization-defined magnitude at primary facility makes facility inoperable."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Fire at primary facility",
+                "description": "Fire (not due to adversarial activity) at primary facility makes facility inoperable."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Fire at backup facility",
+                "description": "Fire (not due to adversarial activity) at backup facility makes facility inoperable or destroys backups of software, configurations, data, and/or logs."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Flood at primary facility",
+                "description": "Flood (not due to adversarial activity) at primary facility makes facility inoperable."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Flood at backup facility",
+                "description": "Flood (not due to adversarial activity) at backup facility makes facility inoperable or destroys backups of software, configurations, data, and/or logs."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Hurricane at primary facility",
+                "description": "Hurricane of organization-defined strength at primary facility makes facility inoperable."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Hurricane at backup facility",
+                "description": "Hurricane of organization-defined strength at backup facility makes facility inoperable or destroys backups of software, configurations, data, and/or logs."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Resource depletion",
+                "description": "Degraded processing performance due to resource depletion."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Introduction of vulnerabilities into software products",
+                "description": "Due to inherent weaknesses in programming languages and software development environments, errors and vulnerabilities are introduced into commonly used software products."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Disk error",
+                "description": "Corrupted storage due to a disk error."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Pervasive disk error",
+                "description": "Multiple disk errors due to aging of a set of devices all acquired at the same time, from the same supplier."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Windstorm/tornado at primary facility",
+                "description": "Windstorm/tornado of organization-defined strength at primary facility makes facility inoperable."
+            },
+            {
+                "event_category_name": null,
+                "event_name": "Windstorm/tornado at backup facility",
+                "description": "Windstorm/tornado of organization-defined strength at backup facility makes facility inoperable or destroys backups of software, configurations, data, and/or logs."
+            }
+        
+        
+    
+    
+]

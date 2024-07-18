@@ -1,17 +1,127 @@
 [
     {
-        "name": "Threat 1",
-        "description": "Description of Threat 1",
-        "source": "Source 1",
-        "origin": "1",
-        "type": "2"
+        "category_name": 4,
+        "name": "War",
+        "description": null
     },
     {
-        "name": "Threat 2",
-        "description": "Description of Threat 2",
-        "source": "Source 2",
-        "origin": "1",
-        "type": "2"
+        "category_name": 4,
+        "name": "Espionage",
+        "description": null
+    },
+    {
+        "category_name": 4,
+        "name": "Sabotage",
+        "description": null
+    },
+    {
+        "category_name": 4,
+        "name": "Subversion",
+        "description": null
+    },
+    {
+        "category_name": 4,
+        "name": "Terrorism",
+        "description": null
+    },
+    {
+        "category_name": 4,
+        "name": "Criminal Acts",
+        "description": null
+    },
+    {
+        "category_name": 4,
+        "name": "Others",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Office Accidents",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Lost Assets",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Data Corruption",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Software Errors",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Hardware Failures",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Mechanical Failures",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Structural Failures",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Fires",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Industrial Accidents",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Traffic Accidents",
+        "description": null
+    },
+    {
+        "category_name": 5,
+        "name": "Nuclear Accidents",
+        "description": null
+    },
+    {
+        "category_name": 6,
+        "name": "Disease",
+        "description": null
+    },
+    {
+        "category_name": 6,
+        "name": "Earth Movement",
+        "description": null
+    },
+    {
+        "category_name": 6,
+        "name": "Flooding",
+        "description": null
+    },
+    {
+        "category_name": 6,
+        "name": "Environmental",
+        "description": null
+    },
+    {
+        "category_name": 6,
+        "name": "Severe Storms",
+        "description": null
+    },
+    {
+        "category_name": 6,
+        "name": "Animals",
+        "description": null
+    },
+    {
+        "category_name": 6,
+        "name": "Plants",
+        "description": null
     }
-
 ]

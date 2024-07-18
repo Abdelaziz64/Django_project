@@ -1,6 +1,8 @@
 # blog/admin.py On enregistre ici tous nos models
 from django.contrib import admin
-from .models import Threat,ThreatType, ThreatOrigin
+from .models import Threat,Family, Category,ThreatEvent,ThreatEventCategory
 admin.site.register(Threat)
-admin.site.register(ThreatType)
-admin.site.register(ThreatOrigin)
+admin.site.register(Family)
+admin.site.register(Category)
+admin.site.register(ThreatEvent)
+admin.site.register(ThreatEventCategory)

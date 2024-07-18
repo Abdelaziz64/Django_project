@@ -1,26 +1,42 @@
 from django.db import models
 from django.urls import reverse
 
-class ThreatType(models.Model):
-    type = models.TextField()
+class Family(models.Model):
+    family = models.TextField()
     def __str__(self):
-        return self.type
+        return self.family
+    
+class Category(models.Model):
+    category_name = models.TextField()
+    description = models.TextField()
+    family = models.ForeignKey(Family, on_delete=models.CASCADE,null=True)
+    def __str__(self):
+        return self.category_name
+    
 
-class ThreatOrigin(models.Model):
-    origin = models.TextField()
+class ThreatEventCategory(models.Model):
+    category_name = models.ForeignKey(Category, on_delete=models.CASCADE,null=True)
+    event_category_name = models.TextField()
     def __str__(self):
-        return self.origin
+        return self.event_category_name
+
+class ThreatEvent(models.Model):
+    event_category_name = models.ForeignKey(ThreatEventCategory, on_delete=models.CASCADE,null=True)
+    event_name = models.TextField()
+    description = models.TextField()
+    def __str__(self):
+        return self.event_name
+
 
 class Threat(models.Model):
-    name = models.CharField(max_length=50)
-    description = models.TextField()
-    source = models.TextField(null=True)
-    origin = models.ForeignKey(ThreatOrigin, on_delete=models.CASCADE,null=True)
-    type = models.ForeignKey(ThreatType, on_delete=models.CASCADE,null=True)
-
+    category_name = models.ForeignKey(Category, on_delete=models.CASCADE,null=True)
+    name = models.TextField(null=True)
+    description = models.TextField(null=True)
     def __str__(self):
-        return self.name
-    def get_absolute_url(self):
-        return reverse("threat_detail", kwargs={"pk": self.pk})
+        return self.name   
+
+
+
+
 
 
